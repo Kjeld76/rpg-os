@@ -1,0 +1,48 @@
+# RPG-OS Configuration
+
+# System-Einstellungen
+system:
+  name: "RPG-OS"
+  version: "0.1.0"
+  architecture: "x86_64"
+  
+# XP-Konfiguration
+xp:
+  base_points: 10
+  multiplier: 1.5
+  levels:
+    - level: 1
+      xp_required: 100
+    - level: 2
+      xp_required: 250
+    - level: 3
+      xp_required: 500
+
+# Quest-System
+quests:
+  enabled: true
+  auto_generate: true
+  rewards:
+    - type: "xp"
+      amount: 50
+    - type: "inventory_slot"
+      amount: 1
+
+# Inventar-System
+inventory:
+  max_slots: 10
+  max_weight: 100
+  
+# Kampfsystem
+combat:
+  enabled: true
+  max_concurrency: 4
+
+# Level-System
+levels:
+  max_level: 100
+  stats:
+    - hp
+    - mp
+    - attack
+    - defense

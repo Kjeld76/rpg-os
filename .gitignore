@@ -1,0 +1,28 @@
+# Build-Ausgabe
+*.o
+*.bin
+*.iso
+test.iso
+
+# QEMU
+*.qcow2
+qemu.log
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# OS-Spezifisch
+.DS_Store
+Thumbs.db
+
+# Temporär
+tmp/
+temp/
+*.pyc
+__pycache__/

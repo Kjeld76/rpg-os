@@ -1,0 +1,28 @@
+# RPG-OS Core (v0.1.0)
+# Minimales Projekt-Setup
+
+[project]
+name = "RPG-OS"
+version = "0.1.0"
+description = "Ein Betriebssystem mit RPG-Elementen"
+license = "MIT"
+authors = ["koenimvf"]
+
+[requirements]
+python = ">=3.11"
+
+[directories]
+src = "src"
+tests = "tests"
+
+[features]
+kernel = ["src/kernel"]
+shell = ["src/shell"]
+inventory = ["src/inventory"]
+quests = ["src/quests"]
+levels = ["src/levels"]
+combat = ["src/combat"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
